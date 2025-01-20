@@ -12,13 +12,11 @@ const compat = new FlatCompat({
 })
 
 export default [
-  {
-    ignores: ['**/node_modules', '**/build'],
-  },
   ...compat.extends('@rocketseat/eslint-config/node'),
   {
     rules: {
       camelcase: 'off',
+      '@typescript-eslint/no-unsafe-declaration-merging': 'off',
     },
   },
 ]
