@@ -17,6 +17,8 @@ export default [
   },
   ...compat.extends('@rocketseat/eslint-config/node'),
   {
-    rules: {},
+    rules: {
+      camelcase: 'off',
+    },
   },
 ]
