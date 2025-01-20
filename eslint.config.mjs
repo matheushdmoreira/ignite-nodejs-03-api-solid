@@ -17,6 +17,8 @@ export default [
     rules: {
       camelcase: 'off',
       '@typescript-eslint/no-unsafe-declaration-merging': 'off',
+      '@typescript-eslint/no-explicit-any': 'off',
+      'no-useless-constructor': 'off',
     },
   },
 ]
