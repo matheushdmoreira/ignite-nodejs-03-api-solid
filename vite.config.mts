@@ -8,5 +8,24 @@ export default defineConfig({
     coverage: {
       all: false,
     },
+    workspace: [
+      {
+        extends: true,
+        test: {
+          include: ['use-cases/**/*.{test,spec}.ts'],
+          name: 'unit',
+          environment: 'node',
+        },
+      },
+      {
+        extends: true,
+        test: {
+          include: ['http/**/*.{test,spec}.ts'],
+          name: 'e2e',
+          environment: 'prisma',
+        },
+      },
+    ],
+    dir: 'src',
   },
 })
